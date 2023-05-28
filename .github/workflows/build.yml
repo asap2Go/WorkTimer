@@ -37,14 +37,9 @@ jobs:
     - name: Install Podman
       uses: gacts/install-podman@v1.1.0
       
-    - name: print directory
-      run: ls
-      
-    - name: set directory
-      run: cd /home/runner/work/WorkTimer/
-      
-    - name: print directory again
-      run: ls 
+    - name: Run LS
+      run: pwd -L
+      shell: bash
       
     - name: Build
       run: fyne-cross windows
