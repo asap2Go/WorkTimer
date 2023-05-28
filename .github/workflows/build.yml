@@ -16,7 +16,7 @@ jobs:
     steps:
     
     - name: Set up Go
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v4
       with:
         go-version: 1.19
 
@@ -32,6 +32,10 @@ jobs:
     - name: Install Podman
       uses: gacts/install-podman@v1.1.0
       
+    - name: cd
+      run: cd /home/runner/work/WorkTimer/
+      shell: bash
+      
     - name: Run PWD
       run: pwd -L
       shell: bash
@@ -42,7 +46,7 @@ jobs:
       
     - name: Build
       run: fyne-cross windows
-      working-directory: ${GITHUB_WORKSPACE}
+      working-directory: '/home/runner/work/WorkTimer/'
       
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
