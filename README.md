@@ -19,6 +19,7 @@ After every stop or start the end and start times will be shown in the app windo
 ![main_stop](https://github.com/asap2Go/Work-Time-Counter/assets/96501510/6701d267-f582-4461-a4ae-ecbafaaceb05)
 
 The time worked can be copied in hh:mm format.
+
 The app minimizes 2 seconds after startup into a system tray as not to clutter the desktop.
 
 ![tray](https://github.com/asap2Go/Work-Time-Counter/assets/96501510/1b4c8cb9-c86a-41a6-92f2-fab6be86f86b)
