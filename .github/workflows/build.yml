@@ -36,6 +36,6 @@ jobs:
       uses: gacts/install-podman@v1.1.0
     
     - name: Build
-      run: fyne-cross windows --appID work.time.counter
+      run: fyne-cross windows -appID work.time.counter
       
       
