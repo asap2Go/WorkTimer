@@ -39,7 +39,7 @@ jobs:
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: executable windows
-        path: /home/runner/work/WorkTimer/WorkTimer/fyne-cross/bin/windows-amd64/Work Time Counter.exe
+        name: Work Time Counter - Windows x64
+        path: /home/runner/work/WorkTimer/WorkTimer/fyne-cross/dist/windows-amd64/Work Time Counter.exe.zip
       
       
