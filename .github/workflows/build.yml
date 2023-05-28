@@ -24,6 +24,9 @@ jobs:
     - name: Set up Fyne Cross
       run: go install github.com/fyne-io/fyne-cross@latest
       
+    - name: add Paths
+      run: export GOPATH=$HOME/go && export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+      
     - name: Install Podman
       uses: gacts/install-podman@v1.1.0
     
