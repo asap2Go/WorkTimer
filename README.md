@@ -14,6 +14,7 @@ or the last user input is older than a specifiable timeout (by default 6 minutes
 ![timeout](https://github.com/asap2Go/Work-Time-Counter/assets/96501510/632d713f-4658-44e2-b3e5-e77852e3e3d1)
 
 The counter can also be stopped and restarted manually.
+After every stop or start the end and start times will be shown in the app window.
 
 ![main_stop](https://github.com/asap2Go/Work-Time-Counter/assets/96501510/6701d267-f582-4461-a4ae-ecbafaaceb05)
 
