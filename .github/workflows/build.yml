@@ -16,7 +16,7 @@ jobs:
     steps:
 
     - name: Set up Environment
-      run: sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev podman-docker
+      run: sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev docker-io
     
     - name: Set up Fyne base
       run: go get fyne.io/fyne/v2@latest
