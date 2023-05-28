@@ -19,7 +19,7 @@ jobs:
       run: sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev
     
     - name: Set up Fyne base
-      run: go get fyne.io/fyne/v2@latest
+      run: go install fyne.io/fyne/v2@latest
       
     - name: Set up Fyne cmd tools
       run: go install fyne.io/fyne/v2/cmd/fyne@latest
