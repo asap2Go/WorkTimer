@@ -14,6 +14,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v3
     
     - name: Set up Go
       uses: actions/setup-go@v4
@@ -31,18 +32,6 @@ jobs:
       
     - name: Install Podman
       uses: gacts/install-podman@v1.1.0
-      
-    - name: cd
-      run: cd /home/runner/work/WorkTimer/
-      shell: bash
-      
-    - name: Run PWD
-      run: pwd -L
-      shell: bash
-      
-    - name: Run LS
-      run: ls
-      shell: bash
       
     - name: Build
       run: fyne-cross windows
