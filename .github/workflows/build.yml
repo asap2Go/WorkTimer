@@ -32,10 +32,6 @@ jobs:
       
     - name: Install Podman
       uses: gacts/install-podman@v1.1.0
-    
-    - name: ls
-      run: ls
-      shell: bash
       
     - name: Build
       run: fyne-cross windows
@@ -43,7 +39,7 @@ jobs:
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: all exe
-        path: ./fyne-cross/bin/*/.exe
+        name: executable windows
+        path: /home/runner/work/WorkTimer/WorkTimer/fyne-cross/bin/windows-amd64/Work Time Counter.exe
       
       
