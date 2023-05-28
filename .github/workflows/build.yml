@@ -36,9 +36,18 @@ jobs:
       
     - name: Install Podman
       uses: gacts/install-podman@v1.1.0
-    
+      
+    - name: print directory
+      run: ls
+      
+    - name: set directory
+      run: cd /home/runner/work/WorkTimer/
+      
+    - name: print directory again
+      run: ls 
+      
     - name: Build
-      run: fyne-cross windows -app-id work.time.counter
+      run: fyne-cross windows
       
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
