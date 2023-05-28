@@ -29,14 +29,11 @@ jobs:
     - name: Set up Fyne Cross
       run: go install github.com/fyne-io/fyne-cross@latest
       
-    - name: add Paths
-      run: export GOPATH=$HOME/go && export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-      
     - name: Install Podman
       uses: gacts/install-podman@v1.1.0
     
     - name: Build
-      run: pwd -L && fyne-cross windows -app-id work.time.counter
+      run: pwd -P && fyne-cross windows -app-id work.time.counter
       
     - name: Archive production artifacts
       uses: actions/upload-artifact@v3
