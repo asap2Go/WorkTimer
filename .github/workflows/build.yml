@@ -40,6 +40,6 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Work Time Counter - Windows x64
-        path: /home/runner/work/WorkTimer/WorkTimer/fyne-cross/dist/windows-amd64/Work Time Counter.exe.zip
+        path: /home/runner/work/Work-Time-Counter/Work-Time-Counter/fyne-cross/dist/windows-amd64/Work Time Counter.exe.zip
       
       
